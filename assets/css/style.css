@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root { 
+  --primary-color: rgb(102, 0, 143);
+  --primary-color-darker: rgb(61, 0, 85);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: center;
+  padding: center;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur (40px);
+  outline: none;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 20px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: #fff;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+form input:hover {
+  background: rgb(234, 208, 255);
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado, .bad {
+  background: rgba(255,255,255,0.15);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: #fff;
+  backdrop-filter: blur (40px);
+}
+
+.bad {
+  background: rgb(255, 150, 150);
+}
